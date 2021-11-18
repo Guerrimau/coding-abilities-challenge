@@ -5,6 +5,7 @@ export default function numberToOrdinal(Number: number) {
     const numberToString = String(Number);
     return numberToString.includes("1", numberToString.length - 1);
   }
+  
   if(Number === 0) {
     return "0";
   } else if(Number === 1) {
