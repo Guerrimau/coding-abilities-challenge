@@ -9,6 +9,9 @@ export default function numberToOrdinal(Number: number) {
     return "2nd";
   } else if (Number === 3) {
     return "3rd";
+  } else if (Number > 20 && String(Number).includes("1")) {
+    return Number + "st";
+  } else {
+    return Number + "th";
   }
-
 }
