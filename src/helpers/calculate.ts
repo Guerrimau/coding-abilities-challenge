@@ -7,6 +7,12 @@ export default function calculate(expression: string) {
 
       case "-":
         return a - b;
+      
+      case "/":
+        return a / b;
+
+      case "*":
+        return a * b;
 
       default:
         return 0
