@@ -26,7 +26,9 @@ export const EjerciceCard = ({
           value={inputValues}
           onChange={onChange}
           type={inputType}/>
-        <button onClick={onClick}>Ejecutar</button>
+        <button
+          className="bg-purple-700 text-white font-medium px-4 py-2 rounded hover:bg-purple-800 transition"
+          onClick={onClick}>Ejecutar</button>
       </div>
     </div>
   )
