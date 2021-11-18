@@ -7,7 +7,7 @@ export const CodingAbilitiesChallenge = () => {
 
   const maskedString = maskify("12345634324234322332");
   const ordinalNumber = numberToOrdinal(22222111111);
-  const result = calculate("1 2 +");
+  const result = calculate("1 2 5 0 - + -");
   
   return (
     <div>
