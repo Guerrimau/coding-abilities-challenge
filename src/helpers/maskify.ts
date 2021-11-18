@@ -9,8 +9,10 @@ export default function maskify (cardNumber: string) {
   for (let index = 0; index < cardNumber.length; index++) {
     const char = cardNumber[index];
     
-    if(index === 0) {
+    if(index === 0 || index >= lastFourIndex) {
       maskedNumber = maskedNumber + char;
+    } else {
+      maskedNumber = maskedNumber + "*";
     }
 
   }
