@@ -18,19 +18,11 @@ export default function calculate(expression: string) {
   const expressionSymbols = expressionCharacters.filter(character => isNaN(Number(character)));
 
   let symbolsIndex = expressionSymbols.length - 1;
-  let result = 0;
+  let result = Number(expressionNumbers[0]);
 
-  for (let index = 0; index < expressionNumbers.length; index++) {
-    let a: number;
-    let b: number;
-    if (index === 0) {
-      a = Number(expressionNumbers[index]);
-      b = Number(expressionNumbers[index + 1]);
-      index++;
-    } else {
-      a = result;
-      b = Number(expressionNumbers[index]);
-    }
+  for (let index = 1; index < expressionNumbers.length; index++) {
+    let a = result;
+    let b = Number(expressionNumbers[index]);
     let symbol = expressionSymbols[symbolsIndex];
     result = ejecuteOperation(symbol, a, b);
     symbolsIndex--;
