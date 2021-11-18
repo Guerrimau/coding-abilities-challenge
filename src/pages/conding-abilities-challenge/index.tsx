@@ -1,5 +1,5 @@
 import React from 'react';
-import { EjerciceCard } from '../../components/ejercice-card';
+import { CardNumberMaskifySection } from '../../components/card-number-maskify-section';
 import calculate from '../../helpers/calculate';
 import maskify from '../../helpers/maskify';
 import numberToOrdinal from '../../helpers/number-to-ordinal';
@@ -13,7 +13,7 @@ export const CodingAbilitiesChallenge = () => {
   return (
     <div>
       <h1>Coding abilities challenge</h1>
-      <EjerciceCard />
+      <CardNumberMaskifySection />
     </div>
   )
 }

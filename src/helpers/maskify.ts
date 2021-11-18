@@ -12,7 +12,7 @@ export default function maskify (cardNumber: string) {
     if(index === 0 || index >= lastFourIndex) {
       maskedNumber = maskedNumber + char;
     } else {
-      maskedNumber = maskedNumber + "*";
+      maskedNumber = maskedNumber + "x";
     }
 
   }

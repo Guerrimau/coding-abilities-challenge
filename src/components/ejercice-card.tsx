@@ -2,10 +2,10 @@ import React from 'react';
 
 interface IejerciceCard {
   title: string,
-  output: string,
+  output: any,
   inputType: string,
   inputValues: any,
-  onChange: () => void,
+  onChange: (e: any) => void,
   onClick: () => void
 }
 
@@ -21,7 +21,7 @@ export const EjerciceCard = ({
     <div>
       <h3>{title}</h3>
       <div>
-        <h4>{output}</h4>
+        {output === "" ? <p>Vacío</p> : <h4>{output}</h4>}
         <input
           value={inputValues}
           onChange={onChange}
