@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { CodingAbilitiesChallenge } from './pages/conding-abilities-challenge';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CodingAbilitiesChallenge />
   </React.StrictMode>,
   document.getElementById('root')
 );
