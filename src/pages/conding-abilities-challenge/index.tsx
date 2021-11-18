@@ -5,7 +5,10 @@ import numberToOrdinal from '../../helpers/number-to-ordinal';
 export const CodingAbilitiesChallenge = () => {
 
   const maskedString = maskify("12345634324234322332");
-  const ordinalNumber = numberToOrdinal("2");
+  const ordinalNumber = numberToOrdinal(22222111111);
+
+  console.log(ordinalNumber);
+  
   
   return (
     <div>
