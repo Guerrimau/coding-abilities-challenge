@@ -7,15 +7,12 @@ export const CodingAbilitiesChallenge = () => {
 
   return (
     <div>
-      <h1>Coding abilities challenge</h1>
-      <CardNumberMaskifySection />
-      <OrdinalNumbersSection />
-      <CalculateSection />
-      <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-        <div>
-          <div className="text-xl font-medium text-primary">ChitChat</div>
-          <p className="text-gray-500">You have a new message!</p>
-        </div>
+      <h1 className="text-3xl font-bold text-center pt-10">Coding abilities challenge</h1>
+      <h2 className="text-center pl-52 pb-10">by Gerardo Mayboca</h2>
+      <div className="flex flex-col items-center">
+        <CardNumberMaskifySection />
+        <OrdinalNumbersSection />
+        <CalculateSection />
       </div>
     </div>
   )
