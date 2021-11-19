@@ -1,6 +1,6 @@
 # Coding Abilities Challenge
 This project is part of a technical interview.\
-Link: https://coding-abilities-challenge-qt4o9ni79-guerrimau.vercel.app/
+Link: https://coding-abilities-challenge-nwefdfurv-guerrimau.vercel.app/
 
 ## Available Scripts
 
